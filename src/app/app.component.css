@@ -1,6 +1,33 @@
 body {
   background-color: #35465c;
 }
+.navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+  background: rgba(0,0,0,.4);
+}
+.navbar-brand {
+  width: 40px;
+  height: 68px;
+  display: block;
+    background-image: url('../../src/assets/img/logos/1@2x.png');
+  -webkit-filter: brightness(1000%); /* Safari */
+  filter: brightness(1000%);
+}
+:hover.navbar-brand {
+  -webkit-filter: brightness(100%); /* Safari */
+  filter: brightness(100%);
+  background-image: url('../../src/assets/img/logos/1@2x.png');
+  animation: play 1s steps(48) infinite;
+}
+@keyframes play {
+    100% { background-position: -1920px; }
+}
+#logo-word {
+  min-width: 100px;
+  max-width: 200px;
+}
 .section {
   color: white;
   text-align:center;
@@ -14,7 +41,7 @@ body {
 }
 .splash-svg {
   max-width: 80%;
-  margin: 0 20% 0 20%;
+  margin: 0 30% 70px 30%;
 }
 #section1 {
     background-image:url('https://78.media.tumblr.com/0963b5b12adf8d429dbefa0adea91443/tumblr_p392n8vLho1ts562ko1_1280.jpg');
