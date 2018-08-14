@@ -1,33 +1,31 @@
-<!doctype html>
 <html>
 <head>
-  <meta charset="utf-8">
   <title>Sign Up | Tumblr</title>
-  <base href="/">
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="src/vendors/fullpage.css" />
-  <script type="text/javascript" src="src/vendors/fullpage.js"></script>
+  <script type="text/javascript" src="src\vendors\fullpage.extensions.min.js"></script>
 </head>
 <body>
   <!-- <splash-header></splash-header> -->
   <app-root>Loading...</app-root>
-  <script>
-  new fullpage('#fullpage', {
-    anchors: ['page1', 'page2', 'page3', 'page4'],
-    sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
-    loopHorizontal: false,
-    licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
-  });
 
-  // //adding the actions to the buttons
-  // $(document).on('click', '#turnOff', function(){
-  //   fullpage_api.setAutoScrolling(false);
-  // });
-  //
-  // $(document).on('click', '#turnOn', function(){
-  //   fullpage_api.setAutoScrolling(true);
-  // });
-</script>
 </body>
+
+<script type="text/javascript">
+new fullpage('#fullpage', {
+  anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
+  sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
+  navigationTooltips: ['fullPage', 'Open', 'Easy', 'Touch'],
+  css3: true,
+  scrollingSpeed: 1000,
+  navigation: true,
+  slidesNavigation: true,
+  responsiveHeight: 330,
+  dragAndMove: true,
+  dragAndMoveKey: 'YWx2YXJvdHJpZ28uY29tX0EyMlpISmhaMEZ1WkUxdmRtVT0wWUc=',
+  controlArrows: false,
+  licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
+});
+</script>
 </html>
