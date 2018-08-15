@@ -1,11 +1,13 @@
 <html>
 <head>
-  <title>Sign Up | Tumblr</title>
+  <title>Sign up | Tumblr</title>
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="src/vendors/fullpage.css" />
   <script type="text/javascript" src="src/vendors/fullpage.extensions.min.js"></script>
   <script type="text/javascript" src="src/vendors/jquery.easings.min.js"></script>
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 </head>
 <body>
   <splashNavbar></splashNavbar>
@@ -20,11 +22,16 @@ new fullpage('#fullpage', {
   css3: true,
   scrollingSpeed: 800,
   navigation: true,
+  navigationPosition: 'left',
   slidesNavigation: true,
+  easing: 'easeInOutCubic',
+	easingcss3: 'ease',
   responsiveHeight: 330,
   dragAndMove: true,
   dragAndMoveKey: 'YWx2YXJvdHJpZ28uY29tX0EyMlpISmhaMEZ1WkUxdmRtVT0wWUc=',
   controlArrows: false,
+  parallax: true,
+parallaxOptions: {type: 'cover', percentage: 62, property: 'translate'},
   licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
 });
 </script>

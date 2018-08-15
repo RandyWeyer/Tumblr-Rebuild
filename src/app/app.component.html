@@ -2,14 +2,14 @@
   {{title}}
 </h1> -->
 
-<nav class="navbar transparent navbar-inverse navbar-fixed-top">
+<nav class="navbar">
   <div class="container-fluid">
-      <div class="navbar-header">
+
         <a class="navbar-brand" href="#"></a>
-      </div>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+
+      <ul class="nav navbar-right">
+        <li><button class="btn btn-default btn-login-splash" href="#">Login</button></li>
+        <li><button class="btn btn-default btn-signin-splash" href="#">Sign Up</button></li>
       </ul>
     </div>
   </nav>
@@ -17,11 +17,41 @@
 <div id="fullpage" class="fullpage-wrapper">
 
   <div class="section active" id="section1" data-anchor="page1">
-    <img src="src/assets/img/logos/Tumblr_Logos_2018.03.06_Wordmark White.png" class="img-responsive" alt="Tumblr" id="logo-word"/>
-    <!-- Text Goes here -->
+    <div class="fp-bg">
     </div>
+    <div class="fadeInUp animated">
+      <img src="src/assets/img/logos/Tumblr_Logos_2018.03.06_Wordmark White.png" alt="tumblr" id="logo-word"/>
+      <h2>
+        Come for what you love.<br>
+        Stay for what you discover.
+      </h2>
+      <div class="mb-0 col-2 center-input-group">
+        <div>
+          <input class="form-control" type="text" name="user-email" value="" placeholder="Email">
+        </div>
+        <div>
+          <input class="form-control" type="password" name="user-password" value="" placeholder="Password">
+        </div>
+        <div>
+          <input class="form-control" type="text" name="user-name" value="" placeholder="Username">
+        </div>
+        <div>
+          <button type="submit" class="btn btn-primary col-12" name="submit-login">Sign Up</button>
+        </div>
+      </div>
 
-	<div class="section" data-anchor="page2">
+      <div class="mobile-apps">
+        <a href="https://app.appsflyer.com/id305343404?pid=tumblr_internal&c=signup_page">
+          <img class="store-icon" src="src/assets/img/logos/mobile-install-apple@2x.png" alt="Apple Store" />
+        </a>
+        <a href="https://app.appsflyer.com/com.tumblr?pid=tumblr_internal&c=signup_page">
+          <img class="store-icon" src="src/assets/img/logos/mobile-install-google@2x.png" alt="Google Play" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+	<div class="section" id="section2" data-anchor="page2">
     <div class="fp-bg">
         </div>
         <div class="splash-svg">
@@ -159,28 +189,53 @@
     </p>
 
 </div>
-	<div class="section" data-anchor="page3">
+	<div class="section" id="section3" data-anchor="page3">
     <div class="fp-bg"></div>
     <h1 class="section-title">Tumblr is blogs.</h1>
     <p>
       Turns out that when you make it easy to create interesting things, that’s exactly what people do. All those great, random blogs your friends send you, those are Tumblr blogs. We’ll help you find and follow blogs like that, and we’ll help other people find and follow yours.
     </p>
   </div>
-	<div class="section" data-anchor="page4">
+	<div class="section" id="section4" data-anchor="page4">
     <div class="fp-bg"></div>
-    <h1 class="section-title">You already know how this works.</h1>
-    <p>
-      Once you follow a blog, all of its posts show up in your dashboard, just like you’d expect. See something great? Reblog it to your own blog. Add commentary if you like. Make it your own. Other people will do the same to your posts. That’s how you meet people here.
-    </p>
+    <div class="dashboard-graphic">
+      <h1 class="section-title">You already know how this works.</h1>
+      <p>
+        Once you follow a blog, all of its posts show up in your dashboard, just like you’d expect. See something great? Reblog it to your own blog. Add commentary if you like. Make it your own. Other people will do the same to your posts. That’s how you meet people here.
+      </p>
+    </div>
   </div>
-  <div class="section" data-anchor="page5">
+  <div class="section" id="section5" data-anchor="page5">
     <div class="fp-bg"></div>
+    <div class="create-graphic">
+      <div class="post-icon text-icon">
+        <span class="icon-label">Text</span>
+      </div>
+      <div class="post-icon photo-icon">
+        <span class="icon-label">Photo</span>
+      </div>
+      <div class="post-icon quote-icon">
+        <span class="icon-label">Quote</span>
+      </div>
+      <div class="post-icon link-icon">
+        <span class="icon-label">Link</span>
+      </div>
+      <div class="post-icon chat-icon">
+        <span class="icon-label">Chat</span>
+      </div>
+      <div class="post-icon audio-icon">
+        <span class="icon-label">Audio</span>
+      </div>
+      <div class="post-icon video-icon">
+        <span class="icon-label">Video</span>
+      </div>
+    </div>
     <h1 class="section-title">Seriously, put anything you want here.</h1>
     <p>
       Seven post types to get you started. Your brain can do the rest. This thing is yours. Use it however you like.
     </p>
   </div>
-  <div class="section" data-anchor="page6">
+  <div class="section" id="section6" data-anchor="page6">
     <div class="fp-bg"></div>
     Some section
   </div>

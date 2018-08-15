@@ -4,11 +4,41 @@ body {
 .navbar {
   position: absolute;
   width: 100%;
-  z-index: 9999;
-  background: rgba(0,0,0,.4);
+  z-index: 9;
+  background: rgba(0,0,0,0);
+}
+.center-input-group {
+  text-align: center;
+  margin: auto 10% 30px 42%;
+}
+.center-input-group * {
+  border-radius: 0px;
+}
+.center-input-group .btn {
+  margin: 5px 0 20px 0;
+}
+::placeholder {
+    color: darkgrey;
+    opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: darkgrey;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: darkgrey;
+}
+.btn-signin-splash {
+  margin: 5px;
+  color: rgba(0,0,0,1);
+  background: white;
+}
+.btn-login-splash {
+  margin: 5px;
+  color: white;
+  background: rgba(0,0,0,0.2);
 }
 .navbar-brand {
-  width: 40px;
+  width: 42px;
   height: 68px;
   display: block;
     background-image: url('../../src/assets/img/logos/1@2x.png');
@@ -28,12 +58,20 @@ body {
   min-width: 100px;
   max-width: 200px;
 }
+.store-icon {
+  max-width: 150px;
+}
 .section {
   color: white;
   text-align:center;
 }
 .section h1 {
-  font-size: 2em;
+  font-size: 32px;
+  margin: 20px;
+}
+.section h2 {
+  margin: 20px;
+  font-size: 16px;
 }
 .section p {
   margin: 0 20% 0 20%;
