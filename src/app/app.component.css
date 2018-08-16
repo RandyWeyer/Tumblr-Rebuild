@@ -29,7 +29,7 @@ body {
 }
 .btn-signin-splash {
   margin: 5px;
-  background:rgba(255,255,255,0.28);
+  background:rgba(255,255,255,1);
 }
 .btn-login-splash {
   margin: 5px;
@@ -79,6 +79,22 @@ body {
 .splash-svg {
   max-width: 80%;
   margin: 0 30% 70px 30%;
+}
+.create-icon {
+  margin: auto 10% 30px 10%;
+/*background-color: white;*/
+}
+.post-icon {
+ margin: 50px 0 50px 0;
+}
+.icon-circle {
+  margin: 100px 0 200px 0;
+  padding: 50px 50px 60px 50px;
+  background-color: white;
+  border-radius: 50%;
+}
+.icon-caption {
+  color: #f2992e;
 }
 #section1 {
     background-image:url('https://78.media.tumblr.com/0963b5b12adf8d429dbefa0adea91443/tumblr_p392n8vLho1ts562ko1_1280.jpg');

@@ -21,10 +21,12 @@
       "styles": [
         "styles.css",
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
-        "../node_modules/animate.css/animate.css"
+        "../node_modules/animate.css/animate.css",
+        "./assets/iconsetMoon.css"
       ],
       "scripts": [
-        "../node_modules/bootstrap/dist/js/bootstrap.min.js"
+        "../node_modules/bootstrap/dist/js/bootstrap.min.js",
+        "./assets/iconsetMoon.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
