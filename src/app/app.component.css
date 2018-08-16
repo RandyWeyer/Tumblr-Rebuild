@@ -57,6 +57,10 @@ body {
   min-width: 100px;
   max-width: 200px;
 }
+.btn-primary {
+  background: rgb(100,157,200);
+  border: none;
+}
 .store-icon {
   max-width: 150px;
 }
@@ -65,7 +69,7 @@ body {
   text-align:center;
 }
 .section h1 {
-  font-size: 32px;
+  font-size: 60px;
   margin: 20px;
 }
 .section h2 {
@@ -80,21 +84,37 @@ body {
   max-width: 80%;
   margin: 0 30% 70px 30%;
 }
+.blogs-header {
+  height: 30%;
+  margin: 280px 5px 0 40px;
+  text-align: left;
+  max-width: 700px;
+}
+.blogs-header h1 {
+  margin-left: 142px;
+}
+.blogs-list {
+  height: 70%;
+}
+.blogs-column {
+  width: 300px;
+  margin: 20px;
+}
 .create-icon {
-  margin: auto 10% 30px 10%;
-/*background-color: white;*/
+  margin: auto 20% 30px 20%;
 }
 .post-icon {
  margin: 50px 0 50px 0;
 }
 .icon-circle {
-  margin: 100px 0 200px 0;
-  padding: 50px 50px 60px 50px;
+  margin: 50px 0 50px 0;
+  padding: 50px;
   background-color: white;
   border-radius: 50%;
 }
 .icon-caption {
-  color: #f2992e;
+  padding-top: 60px;
+  font-weight: bolder;
 }
 #section1 {
     background-image:url('https://78.media.tumblr.com/0963b5b12adf8d429dbefa0adea91443/tumblr_p392n8vLho1ts562ko1_1280.jpg');
