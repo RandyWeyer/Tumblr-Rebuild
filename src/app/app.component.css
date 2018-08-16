@@ -1,6 +1,9 @@
 body {
   background-color: #35465c;
 }
+h5 {
+  color: black;
+}
 .navbar {
   position: absolute;
   width: 100%;
@@ -100,6 +103,40 @@ body {
   width: 300px;
   margin: 20px;
 }
+.dashboard-graphic {
+  max-width: 600px;
+  margin: 50px;
+}
+.card-img {
+  max-width: 600px;
+}
+.card-text {
+  color: black;
+}
+.card-actions {
+  margin: 5px;
+}
+.sample-blog-entries {
+
+}
+.number-of-notes {
+  font-weight: bold;
+  color: #8f8f8f;
+}
+.left-align {
+  text-align: left;
+}
+.right-align {
+  float: right;
+  text-align: right;
+}
+.sample-blog-section-text {
+  text-align: left;
+  margin: 25% 0 0 0;
+}
+.card {
+  margin: 10px;
+}
 .create-icon {
   margin: auto 20% 30px 20%;
 }
@@ -117,7 +154,10 @@ body {
   font-weight: bolder;
 }
 #section1 {
-    background-image:url('https://78.media.tumblr.com/0963b5b12adf8d429dbefa0adea91443/tumblr_p392n8vLho1ts562ko1_1280.jpg');
-    background-size: cover;
-    background-position: center 80%;
+  background-image:url('https://78.media.tumblr.com/0963b5b12adf8d429dbefa0adea91443/tumblr_p392n8vLho1ts562ko1_1280.jpg');
+  background-size: cover;
+  background-position: center 80%;
+}
+#section4 {
+  overflow-y: hidden;
 }
