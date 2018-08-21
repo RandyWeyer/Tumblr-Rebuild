@@ -1,0 +1,17 @@
+.navbar-brand {
+  width: 42px;
+  height: 68px;
+  display: block;
+    background-image: url('../../../src/assets/img/logos/1@2x.png');
+  -webkit-filter: brightness(1000%); /* Safari */
+  filter: brightness(1000%);
+}
+:hover.navbar-brand {
+  -webkit-filter: brightness(100%); /* Safari */
+  filter: brightness(100%);
+  background-image: url('../../../src/assets/img/logos/1@2x.png');
+  animation: play 1s steps(48) infinite;
+}
+@keyframes play {
+    100% { background-position: -1920px; }
+}
