@@ -40,9 +40,6 @@
     <!-- Is not logged in -->
     <div *ngIf ="!isLoggedIn">
       <ul class="nav navbar-right">
-        <li *ngIf ="!isLoggedIn">
-        <a (click)="login()">Log in</a>
-      </li>
         <li><button (click)="login()" class="btn btn-default btn-login-splash">Login</button></li>
         <li><button class="btn btn-default btn-signin-splash">Sign Up</button></li>
       </ul>

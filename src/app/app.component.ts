@@ -9,11 +9,17 @@ import $ from "jquery";
   providers: [AuthenticationService]
 })
 export class AppComponent {
-  user;
+  private isLoggedIn: Boolean;
+  private email: String;
 
   constructor(public authService: AuthenticationService) {
-    this.authService.user.subscribe(user =>  {
-      console.log(user);
+    this.authService.user.subscribe(user => {
+      if (user == null) {
+        this.isLoggedIn = false;
+      } else {
+        this.isLoggedIn = true;
+        this.email = user.displayName;
+      }
     });
   }
 

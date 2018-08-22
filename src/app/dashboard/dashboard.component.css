@@ -1,3 +1,6 @@
+.img-circle {
+  border-radius: 50%;
+}
 .footer {
   position: fixed;
   bottom: 0;
@@ -19,6 +22,10 @@
     background-color: #36465d;
 }
 
+.bg-test-white  {
+  background-color: white;
+}
+
 /********************************/
 /*          Panel cards         */
 /********************************/
@@ -27,6 +34,7 @@
     height: 241px;
     border: none;
     overflow: hidden;
+    background-color: white;
 }
 .panel.panel-card .panel-heading {
     position: relative;

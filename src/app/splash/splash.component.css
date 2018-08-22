@@ -12,7 +12,8 @@ h5 {
 }
 .center-input-group {
   text-align: center;
-  margin: auto 10% 30px 42%;
+  margin: auto 40% 30px 40%;
+  max-width: 20%;
 }
 .center-input-group * {
   border-radius: 0px;
