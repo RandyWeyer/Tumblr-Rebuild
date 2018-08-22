@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { User } from './user.model';
-import { USERS } from './sample-users';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
@@ -13,5 +12,21 @@ export class UserService {
   getUsers(){
     return this.users;
   }
-
+  addUser(newUser: User) {
+    this.users.push(newUser);
+  }
+  getUserById(userId: string){
+    return this.database.object('users/' + userId);
+  }
+  updateUser(localUpdatedUser){
+    var userEntryInFirebase = this.getUserById(localUpdatedUser.$key);
+    userEntryInFirebase.update({email: localUpdatedUser.email,
+                                password: localUpdatedUser.password,
+                                firstName: localUpdatedUser.firstName,
+                                lastName: localUpdatedUser.lastName});
+  }
+  deleteUser(localUserToDelete){
+    var userEntryInFirebase = this.getUserById(localUserToDelete.$key);
+    userEntryInFirebase.remove();
+  }
 }

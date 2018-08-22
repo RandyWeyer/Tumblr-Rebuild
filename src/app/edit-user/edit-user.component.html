@@ -1,3 +1,21 @@
-<p>
-  edit-user works!
-</p>
+<h4>Edit User</h4>
+
+<label>New User Email:</label>
+<input [(ngModel)]="selectedUser.email">
+<br>
+
+<label>New User Password:</label>
+<input [(ngModel)]="selectedUser.password">
+<br>
+
+<label>New User First Name:</label>
+<input [(ngModel)]="selectedUser.firstName">
+<br>
+
+<label>New User Last Name:</label>
+<input [(ngModel)]="selectedUser.lastName">
+<br>
+
+<button (click)="beginUpdatingUser(selectedUser)">Update</button>
+<hr>
+<button (click)="beginDeletingUser(selectedUser)">Delete</button>

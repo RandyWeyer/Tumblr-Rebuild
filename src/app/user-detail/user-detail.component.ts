@@ -11,6 +11,7 @@ import { FirebaseObjectObservable } from 'angularfire2/database';
   styleUrls: ['./user-detail.component.css'],
   providers: [UserService]
 })
+
 export class UserDetailComponent implements OnInit {
   userId: string;
   userToDisplay;

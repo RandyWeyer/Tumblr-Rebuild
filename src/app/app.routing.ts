@@ -4,6 +4,8 @@ import { SplashComponent } from './splash/splash.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AdminComponent }   from './admin/admin.component';
+import { ViewUsersComponent } from './view-users/view-users.component';
+import { UserDetailComponent } from './user-detail/user-detail.component';
 
 
 const appRoutes: Routes = [
@@ -14,6 +16,14 @@ const appRoutes: Routes = [
   {
     path: 'dashboard',
     component: DashboardComponent
+  },
+  {
+    path: 'view-users',
+    component: ViewUsersComponent
+  },
+  {
+    path: 'users/:id',
+    component: UserDetailComponent
   },
   {
   path: 'admin',
