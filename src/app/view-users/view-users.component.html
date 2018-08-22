@@ -1,0 +1,7 @@
+<h2>Marketplace</h2>
+
+<div *ngFor="let user of users | async" (click)="goToDetailPage(user)" class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{user.firstName}} {{user.lastName}}</em></h3>
+  </div>
+</div>

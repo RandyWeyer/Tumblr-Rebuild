@@ -1,0 +1,7 @@
+import { User } from './user.model';
+
+export const USERS: User[] = [
+  new User("randypweyer@gmail.com", "www", "Randy", "Weyer", 1),
+  new User("StevenwwwwwColburn2014780377807@gmail.com", "www", "Steven", "Colburn", 2),
+  new User("AustinwwwwwwwBarr21425140801285@gmail.com", "www", "Austin", "Barr", 3)
+];

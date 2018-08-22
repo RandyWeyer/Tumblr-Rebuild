@@ -1,0 +1,29 @@
+<h3>Add New User to Tumblr</h3>
+<div>
+  <div>
+    <label>Amil:</label>
+    <br>
+    <input #newEmail>
+  </div>
+
+  <div>
+    <label>User's Password:</label>
+    <br>
+    <input #newPassword>
+  </div>
+
+  <div>
+    <label>User's First Name:</label>
+    <br>
+    <input #newFirstName>
+  </div>
+
+  <div>
+    <label>User's Last Name:</label>
+    <br>
+    <textarea #newLastName></textarea>
+  </div>
+
+  <button (click)="submitForm(newEmail.value, newPassword.value, newFirstName.value, newLastName.value); newEmail.value=''; newPassword.value=''; newFirstName.value=''; newLastName.value='';">Add</button>
+
+</div>

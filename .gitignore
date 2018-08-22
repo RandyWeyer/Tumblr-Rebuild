@@ -43,3 +43,6 @@ Thumbs.db
 
 # Secrets and .env variables
 .env
+
+#Firebase credentials
+/src/app/api-keys.ts
