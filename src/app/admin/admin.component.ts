@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user.service';
 import { User } from '../user.model';
+import { FirebaseListObservable } from 'angularfire2/database';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-admin',
@@ -9,10 +11,11 @@ import { User } from '../user.model';
   providers: [UserService]
 })
 export class AdminComponent implements OnInit {
-
+  users: FirebaseListObservable<any[]>;
   constructor(private userService: UserService) { }
 
   ngOnInit() {
+    this.users = this.userService.getUsers();
   }
 
   submitForm(email: string, password: string, firstName: string, lastName: string, username: string) {
