@@ -65,6 +65,9 @@ h5 {
   background: rgb(100,157,200);
   border: none;
 }
+.splash-login {
+  width: 100%;
+}
 .store-icon {
   max-width: 150px;
 }

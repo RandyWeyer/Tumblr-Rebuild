@@ -23,7 +23,8 @@ export class UserService {
     userEntryInFirebase.update({email: localUpdatedUser.email,
                                 password: localUpdatedUser.password,
                                 firstName: localUpdatedUser.firstName,
-                                lastName: localUpdatedUser.lastName});
+                                lastName: localUpdatedUser.lastName,
+                                username: localUpdatedUser.username});
   }
   deleteUser(localUserToDelete){
     var userEntryInFirebase = this.getUserById(localUserToDelete.$key);

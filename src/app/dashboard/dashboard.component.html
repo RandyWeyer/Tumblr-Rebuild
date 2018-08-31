@@ -147,7 +147,18 @@
 
 <div class="row dashboard-column">
 <div class="col-md-8">
-  <div class="jumbotron">What</div>
+  <div class="jumbotron">
+    <div *ngFor="let user of users | async" (click)="goToViewUser(user)" class="panel panel-default">
+      <div class="panel-body">
+        <h3>{{user.username}}</h3>
+        <ul>
+          <li>{{user.email}}</li>
+          <li>{{user.firstName}} {{user.lastName}}</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
 </div>
 <div class="col-md-4">
 <div class="jumbotron">What</div>
@@ -162,6 +173,6 @@
 
 <footer class="footer">
   <div class="container">
-    <a class="text-muted" routerLink="admin">Admin</a>
+    <a class="text-muted" href="admin">Admin</a>
   </div>
 </footer>

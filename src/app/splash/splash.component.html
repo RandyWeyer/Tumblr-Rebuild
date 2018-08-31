@@ -1,3 +1,4 @@
+
 <router-outlet></router-outlet>
 
 <nav class="navbar">
@@ -24,18 +25,12 @@
         Stay for what you discover.
       </h2>
       <div class="center-input-group">
-        <div>
-          <input class="form-control" type="text" name="user-email" value="" placeholder="Email">
-        </div>
-        <div>
-          <input class="form-control" type="password" name="user-password" value="" placeholder="Password">
-        </div>
-        <div>
-          <input class="form-control" type="text" name="user-name" value="" placeholder="Username">
-        </div>
-        <div>
-          <button type="submit" class="btn btn-primary col-12" name="submit-login">Sign Up</button>
-        </div>
+          <form>
+            <input class="form-control" type="text" placeholder="Email" #inputUserEmail>
+            <input class="form-control" type="password" placeholder="Password" #inputUserPassword>
+            <input class="form-control" type="text" placeholder="Username" #inputUserName>
+            <button class="btn btn-primary splash-login" type="click" (click)="signUp(inputUserEmail.value, inputUserPassword.value, '', '', inputUserName.value)" href="/dashboard">Sign Up</button>
+          </form>
       </div>
 
       <!-- Temp access to dashboard -->

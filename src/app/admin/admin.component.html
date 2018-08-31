@@ -24,6 +24,12 @@
     <input #newLastName>
   </div>
 
-  <button (click)="submitForm(newEmail.value, newPassword.value, newFirstName.value, newLastName.value); newEmail.value=''; newPassword.value=''; newFirstName.value=''; newLastName.value='';">Add</button>
+  <div>
+    <label>Username:</label>
+    <br>
+    <input #newUsername>
+  </div>
+
+  <button (click)="submitForm(newEmail.value, newPassword.value, newFirstName.value, newLastName.value, newUsername.value); newEmail.value=''; newPassword.value=''; newFirstName.value=''; newLastName.value=''; newUsername.value=''">Add</button>
 
 </div>
